@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            #region 
             Console.WriteLine("Hello, World!");
 
             Student student;
@@ -22,6 +23,8 @@
             Console.WriteLine(S01.Id);
             S02.Id++;
             Console.WriteLine(S01.Id);
+            #endregion
+          
 
 
            
