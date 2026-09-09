@@ -49,7 +49,10 @@ namespace Demo
             Console.WriteLine(Pages);
             #endregion
 
-
+            #region Question 5
+            double price = 49.99;
+            int intprice = (int)price;
+            #endregion
         }
 
         class Book
