@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using System.Text;
+
+namespace Demo
 {
     internal class Program
     {
@@ -40,6 +42,10 @@
             finally {
                 Console.WriteLine("Done");
             }
+            #endregion
+
+            #region Question 4
+            double Pages = book1.Pages ;
             #endregion
 
 
