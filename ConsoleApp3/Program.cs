@@ -4,14 +4,19 @@
     {
         static void Main(string[] args)
         {
+            #region Question 1
             Book book1 = new Book();
             book1.Title = "book Name";
-            object x = (string)book1.Title;
+            book1.Pages = 300;
+            object x = book1;
+            Console.WriteLine(x);
+            #endregion
         }
         class Book
         {
             public string Title;
             public int Pages;
+            
         }
     }
 }
