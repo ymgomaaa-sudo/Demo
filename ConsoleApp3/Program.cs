@@ -51,7 +51,8 @@ namespace Demo
 
             #region Question 5
             double price = 49.99;
-            int intprice = (int)price;
+            int intprice = (int)price; 
+            Console.WriteLine(intprice);
             #endregion
         }
 
