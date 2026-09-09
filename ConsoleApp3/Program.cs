@@ -54,7 +54,12 @@ namespace Demo
             int intprice = (int)price; 
             Console.WriteLine(intprice);
             #endregion
+            #region Question 6
+            string pagesText = "464";
+            Convert.ToInt32(pagesText);
+            #endregion
         }
+   
 
         class Book
         { 
