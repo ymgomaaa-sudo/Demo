@@ -46,6 +46,7 @@ namespace Demo
 
             #region Question 4
             double Pages = book1.Pages ;
+            Console.WriteLine(Pages);
             #endregion
 
 
