@@ -26,6 +26,23 @@
             Console.WriteLine(y);
             Console.WriteLine(book1.Equals(book2));
             #endregion
+            #region Question 3
+            try
+            {
+                int a = 10;
+                int b = 0;
+                int Result = a / b;
+                //Console.WriteLine(Result);
+            }
+            catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
+            finally {
+                Console.WriteLine("Done");
+            }
+            #endregion
+
+
         }
 
         class Book
