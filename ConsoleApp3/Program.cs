@@ -61,7 +61,18 @@ namespace Demo
             #region Question 7
             string yearText = "2023";
             int year=int.Parse(yearText);
-            #endregion        
+            #endregion
+            #region Question 7-2
+            string padtext = "abc";
+            int.TryParse(padtext, out int age);
+            Console.WriteLine(age);
+            Console.WriteLine("Invalid variable");
+            #endregion
+            #region Question 8
+            int pages = 464;
+            string k = Convert.ToString(pages);
+            Console.WriteLine(k.GetType());
+            #endregion
         }
 
 
