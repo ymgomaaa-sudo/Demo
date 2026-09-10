@@ -58,8 +58,12 @@ namespace Demo
             string pagesText = "464";
             Convert.ToInt32(pagesText);
             #endregion
+            #region Question 7
+            string yearText = "2023";
+            int year=int.Parse(yearText);
+            #endregion        
         }
-   
+
 
         class Book
         { 
