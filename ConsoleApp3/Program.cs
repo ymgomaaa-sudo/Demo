@@ -73,6 +73,13 @@ namespace Demo
             string k = Convert.ToString(pages);
             Console.WriteLine(k.GetType());
             #endregion
+            #region Question 9
+            int copies = 100;
+            object obj = copies;
+            Console.WriteLine(obj);
+            int secoundcopies = (int)obj;
+            Console.WriteLine(secoundcopies);
+            #endregion
         }
 
 
