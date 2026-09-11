@@ -1,10 +1,100 @@
-﻿namespace ConsoleApp3
+﻿using System.Text;
+
+namespace Demo
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region Question 1
+            Book book1 = new Book();
+            book1.Title = "book Name";
+            book1.Pages = 300;
+            object x = book1;
+            Console.WriteLine(x);
+            #region Question 2-2
+            Console.WriteLine(book1.ToString());
+            Console.WriteLine(book1.Equals(book1));
+            Console.WriteLine(book1.GetHashCode()); 
+            Console.WriteLine(book1.GetType());
+            #endregion
+
+            #endregion
+            #region question 2-3
+            Book book2 = new Book();
+            book2.Title = "book2 Name";
+            book2.Pages = 350;
+            object y = book2;
+            Console.WriteLine(y);
+            Console.WriteLine(book1.Equals(book2));
+            #endregion
+            #region Question 3
+            try
+            {
+                int a = 10;
+                int b = 0;
+                int Result = a / b;
+                //Console.WriteLine(Result);
+            }
+            catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
+            finally {
+                Console.WriteLine("Done");
+            }
+            #endregion
+
+            #region Question 4
+            double Pages = book1.Pages ;
+            Console.WriteLine(Pages);
+            #endregion
+
+            #region Question 5
+            double price = 49.99;
+            int intprice = (int)price; 
+            Console.WriteLine(intprice);
+            #endregion
+            #region Question 6
+            string pagesText = "464";
+            Convert.ToInt32(pagesText);
+            #endregion
+            #region Question 7
+            string yearText = "2023";
+            int year=int.Parse(yearText);
+            #endregion
+            #region Question 7-2
+            string padtext = "abc";
+            int.TryParse(padtext, out int age);
+            Console.WriteLine(age);
+            Console.WriteLine("Invalid variable");
+            #endregion
+            #region Question 8
+            int pages = 464;
+            string k = Convert.ToString(pages);
+            Console.WriteLine(k.GetType());
+            #endregion
+            #region Question 9
+            int copies = 100;
+            object obj = copies;
+            Console.WriteLine(obj);
+            int secoundcopies = (int)obj;
+            Console.WriteLine(secoundcopies);
+            #endregion
+        }
+
+
+        class Book
+        { 
+            #region Question 1-2
+            public string Title;
+            public int Pages;
+            #endregion
+            #region Question 2-1
+            public override string ToString()
+            {
+                return $"Title :{Title}, Pages :{Pages}";
+            }
+            #endregion
         }
     }
 }
